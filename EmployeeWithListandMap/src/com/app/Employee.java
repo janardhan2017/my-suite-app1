@@ -1,58 +1,53 @@
 package com.app;
 
-import java.util.List;
-import java.util.Map;
-
 public class Employee {
-	private int employeeId;
-	private double employeeSalary;
-	private String companyName;
-	private List<Integer> empProjects;
-	private Map<Integer,String> empMap;
-	
-	public Employee(int employeeId, double employeeSalary, String companyName, List<Integer> empProjects,
-			Map<Integer, String> empMap) {
+	private String name;
+	private String password;
+	private String employeeID;
+	private String mobileNo;
+	private String address;
+	public Employee(String name, String password, String employeeID, String mobileNo, String address) {
 		super();
-		this.employeeId = employeeId;
-		this.employeeSalary = employeeSalary;
-		this.companyName = companyName;
-		this.empProjects = empProjects;
-		this.empMap = empMap;
+		this.name = name;
+		this.password = password;
+		this.employeeID = employeeID;
+		this.mobileNo = mobileNo;
+		this.address = address;
 	}
-	public int getEmployeeId() {
-		return employeeId;
+	public String getName() {
+		return name;
 	}
-	public void setEmployeeId(int employeeId) {
-		this.employeeId = employeeId;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public double getEmployeeSalary() {
-		return employeeSalary;
+	public String getPassword() {
+		return password;
 	}
-	public void setEmployeeSalary(double employeeSalary) {
-		this.employeeSalary = employeeSalary;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getCompanyName() {
-		return companyName;
+	public String getEmployeeID() {
+		return employeeID;
 	}
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
+	public void setEmployeeID(String employeeID) {
+		this.employeeID = employeeID;
 	}
-	public List<Integer> getEmpProjects() {
-		return empProjects;
+	public String getMobileNo() {
+		return mobileNo;
 	}
-	public void setEmpProjects(List<Integer> empProjects) {
-		this.empProjects = empProjects;
+	public void setMobileNo(String mobileNo) {
+		this.mobileNo = mobileNo;
 	}
-	public Map<Integer, String> getEmpMap() {
-		return empMap;
+	public String getAddress() {
+		return address;
 	}
-	public void setEmpMap(Map<Integer, String> empMap) {
-		this.empMap = empMap;
+	public void setAddress(String address) {
+		this.address = address;
 	}
 	@Override
 	public String toString() {
-		return "Employee [employeeId=" + employeeId + ", employeeSalary=" + employeeSalary + ", companyName="
-				+ companyName + ", empProjects=" + empProjects + ", empMap=" + empMap + "]";
+		return "Employee [name=" + name + ", password=" + password + ", employeeID=" + employeeID + ", mobileNo="
+				+ mobileNo + ", address=" + address + "]";
 	}
-	
 }
+	
