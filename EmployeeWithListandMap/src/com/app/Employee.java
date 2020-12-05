@@ -1,46 +1,58 @@
 package com.app;
 
+import java.util.List;
+import java.util.Map;
+
 public class Employee {
+	private int employeeId;
+	private double employeeSalary;
+	private String companyName;
+	private List<Integer> empProjects;
+	private Map<Integer,String> empMap;
 	
-	private String janapassword;
-	private String janaemployeeID;
-	private String janamobileNo;
-	private String janaaddress;
-	public Employee(String janapassword, String janaemployeeID, String janamobileNo, String janaaddress) {
+	public Employee(int employeeId, double employeeSalary, String companyName, List<Integer> empProjects,
+			Map<Integer, String> empMap) {
 		super();
-		this.janapassword = janapassword;
-		this.janaemployeeID = janaemployeeID;
-		this.janamobileNo = janamobileNo;
-		this.janaaddress = janaaddress;
+		this.employeeId = employeeId;
+		this.employeeSalary = employeeSalary;
+		this.companyName = companyName;
+		this.empProjects = empProjects;
+		this.empMap = empMap;
 	}
-	public String getJanapassword() {
-		return janapassword;
+	public int getEmployeeId() {
+		return employeeId;
 	}
-	public void setJanapassword(String janapassword) {
-		this.janapassword = janapassword;
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
 	}
-	public String getJanaemployeeID() {
-		return janaemployeeID;
+	public double getEmployeeSalary() {
+		return employeeSalary;
 	}
-	public void setJanaemployeeID(String janaemployeeID) {
-		this.janaemployeeID = janaemployeeID;
+	public void setEmployeeSalary(double employeeSalary) {
+		this.employeeSalary = employeeSalary;
 	}
-	public String getJanamobileNo() {
-		return janamobileNo;
+	public String getCompanyName() {
+		return companyName;
 	}
-	public void setJanamobileNo(String janamobileNo) {
-		this.janamobileNo = janamobileNo;
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
-	public String getJanaaddress() {
-		return janaaddress;
+	public List<Integer> getEmpProjects() {
+		return empProjects;
 	}
-	public void setJanaaddress(String janaaddress) {
-		this.janaaddress = janaaddress;
+	public void setEmpProjects(List<Integer> empProjects) {
+		this.empProjects = empProjects;
+	}
+	public Map<Integer, String> getEmpMap() {
+		return empMap;
+	}
+	public void setEmpMap(Map<Integer, String> empMap) {
+		this.empMap = empMap;
 	}
 	@Override
 	public String toString() {
-		return "Employee [janapassword=" + janapassword + ", janaemployeeID=" + janaemployeeID + ", janamobileNo="
-				+ janamobileNo + ", janaaddress=" + janaaddress + "]";
+		return "Employee [employeeId=" + employeeId + ", employeeSalary=" + employeeSalary + ", companyName="
+				+ companyName + ", empProjects=" + empProjects + ", empMap=" + empMap + "]";
 	}
-}
 	
+}
