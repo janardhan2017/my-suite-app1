@@ -4,14 +4,38 @@ import java.util.List;
 import java.util.Map;
 
 public class Employee {
-	private int empId;
+	private int employeeId;
+	private double employeeSalary;
+	private String companyName;
 	private List<Integer> empProjects;
 	private Map<Integer,String> empMap;
-	public int getEmpId() {
-		return empId;
+	
+	public Employee(int employeeId, double employeeSalary, String companyName, List<Integer> empProjects,
+			Map<Integer, String> empMap) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeSalary = employeeSalary;
+		this.companyName = companyName;
+		this.empProjects = empProjects;
+		this.empMap = empMap;
 	}
-	public void setEmpId(int empId) {
-		this.empId = empId;
+	public int getEmployeeId() {
+		return employeeId;
+	}
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+	public double getEmployeeSalary() {
+		return employeeSalary;
+	}
+	public void setEmployeeSalary(double employeeSalary) {
+		this.employeeSalary = employeeSalary;
+	}
+	public String getCompanyName() {
+		return companyName;
+	}
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
 	}
 	public List<Integer> getEmpProjects() {
 		return empProjects;
@@ -27,7 +51,8 @@ public class Employee {
 	}
 	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", empProjects=" + empProjects + ", empMap=" + empMap + "]";
+		return "Employee [employeeId=" + employeeId + ", employeeSalary=" + employeeSalary + ", companyName="
+				+ companyName + ", empProjects=" + empProjects + ", empMap=" + empMap + "]";
 	}
-
+	
 }
