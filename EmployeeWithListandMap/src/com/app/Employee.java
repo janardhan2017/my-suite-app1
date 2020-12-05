@@ -1,53 +1,46 @@
 package com.app;
 
 public class Employee {
-	private String name;
-	private String password;
-	private String employeeID;
-	private String mobileNo;
-	private String address;
-	public Employee(String name, String password, String employeeID, String mobileNo, String address) {
+	
+	private String janapassword;
+	private String janaemployeeID;
+	private String janamobileNo;
+	private String janaaddress;
+	public Employee(String janapassword, String janaemployeeID, String janamobileNo, String janaaddress) {
 		super();
-		this.name = name;
-		this.password = password;
-		this.employeeID = employeeID;
-		this.mobileNo = mobileNo;
-		this.address = address;
+		this.janapassword = janapassword;
+		this.janaemployeeID = janaemployeeID;
+		this.janamobileNo = janamobileNo;
+		this.janaaddress = janaaddress;
 	}
-	public String getName() {
-		return name;
+	public String getJanapassword() {
+		return janapassword;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setJanapassword(String janapassword) {
+		this.janapassword = janapassword;
 	}
-	public String getPassword() {
-		return password;
+	public String getJanaemployeeID() {
+		return janaemployeeID;
 	}
-	public void setPassword(String password) {
-		this.password = password;
+	public void setJanaemployeeID(String janaemployeeID) {
+		this.janaemployeeID = janaemployeeID;
 	}
-	public String getEmployeeID() {
-		return employeeID;
+	public String getJanamobileNo() {
+		return janamobileNo;
 	}
-	public void setEmployeeID(String employeeID) {
-		this.employeeID = employeeID;
+	public void setJanamobileNo(String janamobileNo) {
+		this.janamobileNo = janamobileNo;
 	}
-	public String getMobileNo() {
-		return mobileNo;
+	public String getJanaaddress() {
+		return janaaddress;
 	}
-	public void setMobileNo(String mobileNo) {
-		this.mobileNo = mobileNo;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
+	public void setJanaaddress(String janaaddress) {
+		this.janaaddress = janaaddress;
 	}
 	@Override
 	public String toString() {
-		return "Employee [name=" + name + ", password=" + password + ", employeeID=" + employeeID + ", mobileNo="
-				+ mobileNo + ", address=" + address + "]";
+		return "Employee [janapassword=" + janapassword + ", janaemployeeID=" + janaemployeeID + ", janamobileNo="
+				+ janamobileNo + ", janaaddress=" + janaaddress + "]";
 	}
 }
 	
